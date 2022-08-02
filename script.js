@@ -6,7 +6,7 @@ const giovani = 18;
 const anziani = 65;
 const basePrezzo = 0.21;
 
-form.addEventListener("submit", calculatePrice());
+form.addEventListener("submit", calculatePrice);
 
 function calculatePrice(event)
 {
@@ -26,11 +26,6 @@ function calculatePrice(event)
     else
         res = (basePrezzo * km);
 
-    let price = document.getElementById(finalPrice);
-    console.log(finalPrice);
-    let ageOut = document.getElementById(ageOutput);
-    console.log(ageOut);
-    let kmOut = document.getElementById(kmOutput);
-    console.log(kmOut);
+    document.getElementById("finalPrice").innerHTML=res;
 
 }
