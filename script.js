@@ -22,7 +22,7 @@ function calculatePrice(event)
     if(eta<giovani)
         res = (basePrezzo * km ) * scontoGiovani;
     else if (eta>anziani)
-        res = (basePrezzo * km ) * oldDisc;
+        res = (basePrezzo * km ) * scontoAnziani;
     else
         res = (basePrezzo * km);
 
